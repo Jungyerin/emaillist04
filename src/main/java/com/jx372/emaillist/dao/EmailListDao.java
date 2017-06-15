@@ -25,7 +25,7 @@ public class EmailListDao {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			// 2.connection 하기
-			String url = "jdbc:mysql://localhost:3306/webdb?characterEncoding=utf8";
+			String url = "jdbc:mysql://192.168.1.32:3306/webdb?characterEncoding=utf8";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 		} catch (ClassNotFoundException e) {
 			System.out.println("sql driver를 찾을 수 없습니다.");
